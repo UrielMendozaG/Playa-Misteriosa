@@ -1,5 +1,7 @@
 import anime from "../Lib/anime.min.js";
 
+var EsceneLoaded = new Event("EsceneLoaded");
+
 export default function scene() {
   const sceneShowing = () => {
     let score = document.getElementById("score");
@@ -11,9 +13,9 @@ export default function scene() {
      anime({
        targets: [score,scene],
        opacity: 1,
-       display: "flex",
        easing: "easeInOutQuad",
-       complete: () => window.removeEventListener("introductionClicked")
+       complete: () => window.removeEventListener("introductionClicked", sceneShowing()),
+       complete: () => window.dispatchEvent(EsceneLoaded)
      });
 
   };
