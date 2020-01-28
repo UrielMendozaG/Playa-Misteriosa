@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scene-introduction {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scene-introduction .text h2 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.scene-introduction .text p {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 100;
+  -webkit-animation: blink 1.2s infinite alternate;
+          animation: blink 1.2s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.scene {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sun {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: translateY(-10.5em);
+          transform: translateY(-10.5em);
+}
+
+.score {
+  margin-top: 4em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.coconut, .points {
+  margin: 0 4em 0em 0;
+}
+
+.points {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 4.9em;
+  padding-bottom: .2em;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
