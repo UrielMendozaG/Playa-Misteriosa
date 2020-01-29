@@ -104,4 +104,11 @@ body {
   opacity: 0;
   display: none;
 }
+
+.singleCoconut {
+  position: absolute;
+  -webkit-transform: translate(-16em, 12.5em);
+          transform: translate(-16em, 12.5em);
+  visibility: hidden;
+}
 /*# sourceMappingURL=main.css.map */

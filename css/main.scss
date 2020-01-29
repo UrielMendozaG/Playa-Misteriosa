@@ -40,6 +40,7 @@ body{
   }
 }
 
+// scene game
 
 .scene {
     height: 100vh;
@@ -83,4 +84,10 @@ body{
 .hidden {
     opacity: 0;
     display: none;
+}
+
+.singleCoconut {
+    position: absolute;
+    transform: translate(-16em, 12.5em);
+    visibility: hidden;
 }
