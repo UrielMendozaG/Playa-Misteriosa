@@ -1,5 +1,7 @@
 import anime from "../Lib/anime.min.js";
 
+var sunShowed = new Event("sunShowed")
+
 export default function sun() {
   const sunAnimation = () => {
     let elipse = document.getElementById("sun");
@@ -14,7 +16,8 @@ export default function sun() {
       translateY: "-10.5em",
       duration: 3000,
       easing: "easeInOutQuad",
-      complete: () => window.removeEventListener("EsceneLoaded", sunAnimation())
+      complete: () => window.removeEventListener("EsceneLoaded", sunAnimation()),
+      complete: () => window.dispatchEvent(sunShowed)
     });
   };
   window.addEventListener("EsceneLoaded", e => sunAnimation());
