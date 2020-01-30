@@ -11,7 +11,8 @@ export default function CoconutBehavior() {
   const coconutClicked = () => {
     numberOfClicks = counterClick();
     if (numberOfClicks == 6 && isCoconutGrabed) {
-      window.dispatchEvent(coconutScoreClicked20Times);
+      window.dispatchEvent(coconutScoreClicked20Times)
+      numberOfClicks = 0;
     }
   };
 
