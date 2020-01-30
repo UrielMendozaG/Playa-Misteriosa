@@ -20,7 +20,6 @@ export default function Text(){
         "Ten, toma esto",
         "Mi creador me dijo que algun dia llegara alguien que le de continuidad a esta historia.",
         "Espero que no se haya equivocado...",
-        "¿Que dices? ¿Tu eres la persona?"
     ]
 
 
@@ -84,7 +83,7 @@ export default function Text(){
         if(txtIndex == 5)
             window.dispatchEvent(showGithub);
 
-        if(txtIndex == 8)
+        if(txtIndex == 7)
             window.removeEventListener("hobboClicked", showFinalText)
 
         txtIndex += 1;
