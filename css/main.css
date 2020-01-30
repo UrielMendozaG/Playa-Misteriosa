@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .scene-introduction {
@@ -88,16 +88,13 @@ body {
   left: 0;
 }
 
-.coconut, .points {
-  margin: 0 4em 0em 0;
-}
-
 .points {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 4.9em;
-  padding-bottom: .2em;
+  padding-bottom: 0.1em;
+  margin: 0 2em 0 2em;
 }
 
 .hidden {
@@ -110,5 +107,41 @@ body {
   -webkit-transform: translate(-16em, 12.5em);
           transform: translate(-16em, 12.5em);
   visibility: hidden;
+}
+
+.hobbo {
+  position: absolute;
+  width: 10em;
+  -webkit-transform: translate(-40em, 11em);
+          transform: translate(-40em, 11em);
+  visibility: hidden;
+}
+
+.misterious-text {
+  position: fixed;
+  width: auto;
+  display: none;
+  margin-top: 5em;
+  margin-left: 8em;
+  -webkit-box-shadow: 0px 4px 3px 0px #d9d9d9;
+  box-shadow: 0px 4px 3px 0px #d9d9d9;
+  border-radius: 14px 14px 14px 14px;
+  -webkit-border-radius: 14px 14px 14px 14px;
+  border: 0px solid #000000;
+}
+
+.misterious-text p {
+  font-weight: 600;
+  margin: 1em;
+  font-size: 1.7em;
+}
+
+.github {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 4em;
+  -webkit-transform: translate(-40em, 3em);
+          transform: translate(-40em, 3em);
 }
 /*# sourceMappingURL=main.css.map */
