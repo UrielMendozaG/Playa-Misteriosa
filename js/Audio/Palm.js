@@ -1,5 +1,5 @@
 var sound = new Howl({
-  src: ["../../public/sounds/punch.wav"]
+  src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/punch.wav"]
 });
 
 var palmClicked = new Event("palmClicked");

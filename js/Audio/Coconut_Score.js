@@ -1,5 +1,5 @@
 var sound = new Howl({
-  src: ["../../public/sounds/hollow_punch.wav"]
+  src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/hollow_punch.wav"]
 });
 
 var coconutClicked = new Event("coconutClicked")

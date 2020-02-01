@@ -1,5 +1,5 @@
 var sound = new Howl({
-  src: ["../../public/sounds/score.wav"]
+  src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/score.wav"]
 });
 
 export default function ScoreSound() {
