@@ -62,6 +62,10 @@ export default function Text(){
             window.removeEventListener("coconutScoreClicked20Times", showText)
         }
 
+        if(!isTime && txtIndex == 4){
+            window.removeEventListener("coconutScoreClicked20Times", showText)
+        }
+
 
         window.dispatchEvent(popText)
     }
