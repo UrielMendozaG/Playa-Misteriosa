@@ -68,8 +68,7 @@ body {
   left: 0;
 }
 
-.coconut{
-
+.coconut {
 }
 
 .points {
@@ -106,7 +105,7 @@ body {
 .misterious-text {
   position: fixed;
   width: auto;
-  
+
   display: none;
 
   margin-top: 5em;
@@ -125,7 +124,7 @@ body {
   p {
     font-weight: 600;
     margin: 1em;
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
 }
 
@@ -137,3 +136,32 @@ body {
   transform: translate(-40em, 3em);
 }
 
+@media (max-width: 1690px) {
+  .coconut {
+    width: 4em;
+  }
+
+  .points {
+    font-size: 3.5em;
+  }
+
+  .misterious-text {
+    margin-top: 5em;
+    margin-left: 5em;
+    font-size: .9em;
+  }
+
+  .score{
+    margin-top: 5.5em;
+  }
+
+  .palm{
+    width: 27em;
+  }
+  
+  .sun{
+    width: 6em;
+  }
+
+
+}
