@@ -1,5 +1,5 @@
 var sound = new Howl({
-    src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/pop.wav"]
+    src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/pop.mp3"]
   });
   
   export default function textAudio() {
