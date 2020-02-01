@@ -1,5 +1,5 @@
 var sound = new Howl({
-  src: ["../../public/sounds/beach.wav"],
+  src: ["https://urielmendozag.github.io/Playa-Misteriosa/public/sounds/beach.wav"],
   volume: .2,
 });
 
