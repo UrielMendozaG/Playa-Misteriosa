@@ -12,7 +12,7 @@ export default function GithubBehaviour() {
       easing: "easeInOutQuad",
       complete: () => {
         github.style.cursor = "pointer";
-        github.onclick = () => window.open("https://github.com/urielmendozag");
+        github.onclick = () => window.open("https://github.com/UrielMendozaG/Playa-Misteriosa");
       }
     });
   };
