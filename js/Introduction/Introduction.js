@@ -28,6 +28,8 @@ export default function controller() {
         }
       });
     };
+
+    window.removeEventListener("ambienceLoaded", loaded)
   };
 
   window.addEventListener("ambienceLoaded", loaded)
