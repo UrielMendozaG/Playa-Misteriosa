@@ -10,7 +10,7 @@ export default function controller() {
   let loading = document.getElementById("loading");
 
 
-  body.onload = () => {
+  const loaded  = () => {
     clickToStart.style.display = "block"
     clickToStart.style.textAlign = "center"
 
@@ -29,4 +29,6 @@ export default function controller() {
       });
     };
   };
+
+  window.addEventListener("ambienceLoaded", loaded)
 }
